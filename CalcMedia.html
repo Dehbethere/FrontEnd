@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Calculadora</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+</head>
+
+<body>
+    <form action="calculadora">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label>Nome: </label>
+                <input type="text" class="form-control" placeholder="Digite seu nome" id="nome">
+            </div>
+            <div class="form-group col-md-6">
+                <label>RG: </label>
+                <input type="text" class="form-control" placeholder="Digite seu RG" id="rg">
+            </div>
+            <div class="form-group col-md-6">
+                <label>CPF: </label>
+                <input type="text" class="form-control" placeholder="Digite seu CPF" id="cpf">
+            </div>
+            <div class="form-group col-md-6">
+                <label>Email: </label>
+                <input type="text" class="form-control" placeholder="Digite seu email" id="email">
+            </div>
+            <div class="form-group col-md-6">
+                <label>Nota 01: </label>
+                <input type="text" class="form-control" placeholder="Digite sua primeira nota" id="n01">
+            </div>
+            <div class="form-group col-md-6">
+                <label>Nota 02: </label>
+                <input type="text" class="form-control" placeholder="Digite sua segunda nota" id="n02">
+            </div>
+            <div class="form-group col-md-6">
+                <label>Nota 03:</label>
+                <input type="text" class="form-control" placeholder="Digite sua terceira nota" id="n03">
+            </div>
+            <div class="form-group col-md-6">
+                <label>Media:</label>
+                <input type="text" class="form-control" id="media">
+            </div>
+            <div class="form-group col-md-6">
+                <label>Situação</label>
+                <input type="text" class="form-control" id="situacao">
+            </div>
+        </div>
+        <button type="button" class="btn btn-sucess" onclick="calcMedia()">Calcular</button>
+        <button type="button" class="btn btn-sucess" onclick="situation()">Rec or not</button>
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" onclick="infos()">Minhas infos</button>
+
+
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Personal Info</h4>
+      </div>
+      <div class="modal-body">
+        <p id="i01"> </p>
+        <p id="i02"> </p>
+        <p id="i03"> </p>
+        <p id="i04"> </p>
+        <p id="i05"> </p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+   
+
+
+        </div>
+    </form>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/media.js"></script>
+</body>
+
+</html>
